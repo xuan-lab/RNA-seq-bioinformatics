@@ -87,6 +87,7 @@ pip install pandas matplotlib seaborn rpy2
 ├── rnaseq_analysis.py        # 实现 RNA-seq 全流程分析的 Python 脚本
 └── README.md                 # 项目说明文档（即本文件）
 ```
+以上为规划，现在还未完全完善项目
 
 ## 使用方法
 
