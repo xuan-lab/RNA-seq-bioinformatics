@@ -115,7 +115,7 @@ sample4,control
 
 ### 3. 执行 RNA-seq 分析脚本：
 
-通过命令行在项目根目录下运行以下命令���
+通过命令行在项目根目录下运行以下命令
 
 ```bash
 python rnaseq_analysis.py
