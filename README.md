@@ -158,6 +158,11 @@ DESeq2 生成的差异表达结果保存在 `deseq2_results.csv` 文件中，主
 - **pvalue**：差异表达的显著性 p 值。
 - **padj**：使用 Benjamini-Hochberg 方法校正的 p 值，用于控制多重检验的假阳性率。
 
+## 作者
+- 姓名：Xiexuan
+- 邮箱：xiexuan@njfu.edu.cn
+- 单位：南京林业大学
+
 ## 参考文献
 
 - **FastQC**：Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data.
