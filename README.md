@@ -82,12 +82,12 @@ pip install pandas matplotlib seaborn rpy2
 │   ├── hisat2/               # 比对结果（SAM/BAM 文件）
 │   ├── counts.txt            # FeatureCounts 生成的计数矩阵
 │   ├── deseq2_results.csv    # 差异表达分析结果
+│   ├── significant_genes.csv # 显著差异基因结果
 │   ├── volcano_plot.png      # 差异表达基因的火山图
 ├── conditions.csv            # 样本条件文件，定义差异表达分析中的实验组别
 ├── rnaseq_analysis.py        # 实现 RNA-seq 全流程分析的 Python 脚本
 └── README.md                 # 项目说明文档（即本文件）
 ```
-以上为规划，现在还未完全完善项目
 
 ## 使用方法
 
@@ -114,7 +114,7 @@ sample4,control
 
 ### 3. 执行 RNA-seq 分析脚本：
 
-通过命令行在项目根目录下运行以下命令：
+通过命令行在项目根目录下运行以下命令���
 
 ```bash
 python rnaseq_analysis.py
@@ -132,7 +132,8 @@ python rnaseq_analysis.py
 ### 4. 查看结果：
 
 所有分析结果将保存在 `./results/` 目录中。主要结果包括：
-- **差异表达分析结果**：`deseq2_results.csv` 文件包含差异基因表达分析的详细结果。
+- **差异表达分析结果**：`deseq2_results.csv` 文件包含差��基因表达分析的详细结果。
+- **显著差异基因**：`significant_genes.csv` 包含筛选出的显著差异基因。
 - **火山图**：`volcano_plot.png` 文件展示了差异表达基因的可视化结果。
 
 ## 文件说明
@@ -141,6 +142,7 @@ python rnaseq_analysis.py
 - **`conditions.csv`**：定义样本与实验条件关系的文件，用于差异表达分析。
 - **`counts.txt`**：由 FeatureCounts 生成的基因表达计数矩阵。
 - **`deseq2_results.csv`**：DESeq2 生成的差异表达分析结果，包括基因的倍数变化、p 值和调整后的 p 值。
+- **`significant_genes.csv`**：包含显著差异基因的结果文件。
 - **`volcano_plot.png`**：火山图，展示差异表达基因的显著性与倍数变化。
 
 ## 结果展示
@@ -158,11 +160,6 @@ DESeq2 生成的差异表达结果保存在 `deseq2_results.csv` 文件中，主
 - **log2FoldChange**：基因表达的对数倍数变化，表示在实验条件间的差异表达。
 - **pvalue**：差异表达的显著性 p 值。
 - **padj**：使用 Benjamini-Hochberg 方法校正的 p 值，用于控制多重检验的假阳性率。
-
-## 作者
-- 姓名：Xiexuan
-- 邮箱：xiexuan@njfu.edu.cn
-- 单位：南京林业大学
 
 ## 参考文献
 
