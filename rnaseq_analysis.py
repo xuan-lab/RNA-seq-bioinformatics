@@ -1,4 +1,4 @@
-# Filename: RNA-seq.py
+# Filename: rnaseq_analysis.py
 # Author: Xiexuan <xiexuan@kernel-dev.com>
 
 import os
