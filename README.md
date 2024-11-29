@@ -1,4 +1,5 @@
 # RNA-seq 数据分析流程
+11.29补充：突然感觉生信方面搞pipeline没有前途
 
 本项目提供了一个基于 Python 实现的 RNA-seq 数据分析流程，涵盖从原始数据的质量控制到差异表达分析的所有关键步骤。该流程集成了多个主流的生物信息学工具，如 **FastQC**、**Trim Galore**、**Hisat2** 和 **FeatureCounts**，并使用 R 语言中的 **DESeq2** 进行差异表达分析。
 
