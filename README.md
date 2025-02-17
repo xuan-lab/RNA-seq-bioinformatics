@@ -168,7 +168,6 @@ DESeq2 生成的差异表达结果保存在 `deseq2_results.csv` 文件中，主
 - 邮箱：xiexuan@njfu.edu.cn
 - 单位：南京林业大学
 
-## 参考文献
 
 - **FastQC**：Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data.
 - **Trim Galore**：Krueger, F. (2012). Trim Galore: A Wrapper Tool Around Cutadapt and FastQC to Consistently Apply Quality and Adapter Trimming to FastQ Files.
